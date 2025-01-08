@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f3f3f3;
+  font-family: "Arial", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #3b3b3b;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.game {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  max-width: 360px;
+  width: 100%;
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  background-color: #fff;
+  font-size: 3rem;
+  color: #3b3b3b;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.box:hover {
+  background-color: #e0e0e0;
+  transform: scale(1.05);
+}
+
+.box:active {
+  transform: scale(1);
+}
+
+#reset-btn {
+  padding: 10px 20px;
+  font-size: 1.25rem;
+  background-color: #3b3b3b;
+  color: #fff;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+#reset-btn:hover {
+  background-color: #575757;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#newGameBtn {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #3b3b3b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#newGameBtn:hover {
+  background-color: #575757;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .game {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 300px;
+  }
+
+  .box {
+    height: 80px;
+    width: 80px;
+    font-size: 2.5rem;
+  }
+
+  #reset-btn {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+
+  #newGameBtn {
+    padding: 8px 16px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .game {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 250px;
+  }
+
+  .box {
+    height: 70px;
+    width: 70px;
+    font-size: 2rem;
+  }
+
+  #reset-btn {
+    font-size: 1rem;
+    padding: 6px 12px;
+  }
+
+  #newGameBtn {
+    padding: 6px 12px;
+    font-size: 1rem;
+  }
+}

@@ -1,14 +1,14 @@
-# Tic Tac Toe Game
+# TicTac Pro
 
-A user-friendly, interactive Tic Tac Toe game built using **HTML**, **CSS**, and **JavaScript**. This game allows two players to take turns, provides instant feedback on the game status (win or draw), and offers a sleek, minimalistic design. It is fully responsive, ensuring a smooth gaming experience across different devices.
+TicTac Pro is a user-friendly, interactive Tic Tac Toe game built using **HTML**, **CSS**, and **JavaScript**. This game allows two players to take turns, provides instant feedback on the game status (win or draw), and offers a sleek, minimalistic design. It is fully responsive, ensuring a smooth gaming experience across different devices.
 
 ## 🎮 Demo Screenshot
 
-![Screenshot of Project](assets/screenshot.png)
+![Screenshot of Project](assets/screenshot/screenshot.png)
 
 ## 🔗 Live Demo
 
-Play the game live here: **[Tic Tac Toe Game Live Demo](https://premkrrajbhar.github.io/tic-tac-toe-game/)**
+Play the game live here: **[TicTac-Pro](https://premkrrajbhar.github.io/TicTac-Pro/)**
 
 ## 📋 Features
 
@@ -39,13 +39,13 @@ Play the game live here: **[Tic Tac Toe Game Live Demo](https://premkrrajbhar.gi
 - Step 1: Clone the repository:
 
    ```bash
-   git clone https://github.com/premkrrajbhar/tic-tac-toe-game.git
+   git clone https://github.com/premkrrajbhar/TicTac-Pro.git
    ```
 
 - Step 2: Navigate to the project folder:
 
    ```bash
-   cd tic-tac-toe-game
+   cd TicTac-Pro
    ```
 
 - Step 3:  Open the `index.html` file in your web browser to start the game.

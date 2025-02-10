@@ -34,6 +34,23 @@ Play the game live here: **[TicTac-Pro](https://premkrrajbhar.github.io/TicTac-P
 - **Reset the Game**: Click the **"Reset Game"** button to start a new round with an empty board.
 - **Game Result**: Once the game ends, a popup will show the result with the option to play a new game.
 
+## 📂 Project Structure
+
+```
+├── README.md
+├── assets/
+│   ├── favicon/
+│   │   └── tictacPro-favicon.png
+│   └── screenshot/
+│       └── screenshot.png
+├── css/
+│   └── style.css
+├── index.html
+└── script/
+    └── script.js
+
+```
+
 ## 📝 How to Run Locally
 
 - Step 1: Clone the repository:

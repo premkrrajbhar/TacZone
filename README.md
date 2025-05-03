@@ -1,14 +1,14 @@
-# TicTac Pro
+# TacZone
 
-TicTac Pro is a user-friendly, interactive Tic Tac Toe game built using **HTML**, **CSS**, and **JavaScript**. This game allows two players to take turns, provides instant feedback on the game status (win or draw), and offers a sleek, minimalistic design. It is fully responsive, ensuring a smooth gaming experience across different devices.
+**TacZOne** is a clean, fun, and interactive web-based Tic Tac Toe game. Built with HTML, CSS and JavaScript.
 
 ## 🎮 Demo Screenshot
 
-![Screenshot of Project](assets/screenshot/screenshot.png)
+![Screenshot of Project](assets/screenshot/screenshot.jpg)
 
 ## 🔗 Live Demo
 
-Play the game live here: **[TicTac-Pro](https://premkrrajbhar.github.io/TicTac-Pro/)**
+Play the game live here: **[TacZone](https://premkrrajbhar.github.io/TacZone/)**
 
 ## 📋 Features
 
@@ -16,14 +16,14 @@ Play the game live here: **[TicTac-Pro](https://premkrrajbhar.github.io/TicTac-P
 - **Winner Detection**: Automatically detects when a player has won by completing a row, column, or diagonal.
 - **Draw Detection**: If all boxes are filled without a winner, the game declares a draw.
 - **Reset Functionality**: The game can be reset using a button to start a new round.
-- **Popup Result**: Displays a popup with the winner or draw message after the game ends.
 - **Responsive Design**: Optimized for desktops, tablets, and mobile devices, ensuring a smooth experience on any screen size.
 - **User-Friendly Interface**: Simple and intuitive UI with clear buttons and grid layout, perfect for quick and easy gameplay.
 
 ## 🛠️ Technologies Used
 
 - **HTML**: Provides the structure and layout of the game board.
-- **CSS**: Styles the game interface, ensuring a clean and modern design.
+- **CSS**: for custom styling.
+- **Bootstrap**: for styling and responsive layout 
 - **JavaScript**: Implements the game logic, including turn tracking, winner detection, draw check, and game reset.
 
 ## 💻 How to Play
@@ -32,22 +32,35 @@ Play the game live here: **[TicTac-Pro](https://premkrrajbhar.github.io/TicTac-P
 - **Make a Move**: Click on an empty square to make a move. Player X goes first.
 - **Win or Draw**: The game will automatically detect if a player wins or if the game ends in a draw.
 - **Reset the Game**: Click the **"Reset Game"** button to start a new round with an empty board.
-- **Game Result**: Once the game ends, a popup will show the result with the option to play a new game.
+- **Game Result**: Once the game ends, you will show a message of Result
 
 ## 📂 Project Structure
 
 ```
+├── LICENSE
 ├── README.md
-├── assets/
-│   ├── favicon/
-│   │   └── tictacPro-favicon.png
-│   └── screenshot/
-│       └── screenshot.png
-├── css/
+├── assets
+│   ├── favicon
+│   │   └── taczoneFavicon.png
+│   ├── images
+│   │   ├── about-section
+│   │   │   └── img.png
+│   │   ├── how-to-play-section
+│   │   │   └── img.png
+│   │   └── testimonial-section
+│   │       ├── img.png
+│   │       └── users
+│   │           ├── user-1.jpg
+│   │           ├── user-2.jpg
+│   │           └── user-3.jpg
+│   └── screenshot
+│       └── screenshot.jpg
+├── css
 │   └── style.css
 ├── index.html
-└── script/
+└── script
     └── script.js
+
 
 ```
 
@@ -56,16 +69,19 @@ Play the game live here: **[TicTac-Pro](https://premkrrajbhar.github.io/TicTac-P
 - Step 1: Clone the repository:
 
    ```bash
-   git clone https://github.com/premkrrajbhar/TicTac-Pro.git
+   git clone https://github.com/premkrrajbhar/TacZone.git
    ```
 
 - Step 2: Navigate to the project folder:
 
    ```bash
-   cd TicTac-Pro
+   cd TacZone
    ```
 
 - Step 3:  Open the `index.html` file in your web browser to start the game.
+
+## 📄 License
+This project is open-source and free to use under the MIT License.
 
 ## 🤝 Contributing
 

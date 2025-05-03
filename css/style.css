@@ -1,178 +1,99 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
-body {
-  background-color: #f3f3f3;
-  font-family: "Arial", sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  text-align: center;
-  padding: 20px;
+html {
+  scroll-padding-top: 56px;
 }
 
-main h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-  margin-left: 20px;
-  margin-right: 20px;
-  color: #3b3b3b;
-  font-weight: bold;
+.navbar {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
 }
 
-main p {
-  color: #3b3b3b;
-  margin-bottom: 30px;
-  margin-left: 20px;
-  margin-right: 20px;
+.navbar .nav-link:hover {
+  text-decoration: underline;
 }
 
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 20px;
-  margin: 20px;
+#customSpace {
+  height: 80px;
+}
+
+#startplaying {
+  background-color: #f6faff;
 }
 
 .game {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
+  gap: 10px;
   max-width: 360px;
   width: 100%;
+  margin: auto;
 }
 
 .box {
-  height: 100px;
-  width: 100px;
+  width: 90px;
+  height: 90px;
+  font-size: 3rem;
+  background-color: #fff;
   border: 2px solid #333;
   border-radius: 10px;
-  background-color: #fff;
-  font-size: 3rem;
-  color: #3b3b3b;
-  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .box:hover {
   background-color: #e0e0e0;
-  transform: scale(1.05);
 }
 
-.box:active {
-  transform: scale(1);
+.result-message {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 15px;
+  color: #333;
 }
 
-#reset-btn {
-  padding: 10px 20px;
-  font-size: 1.25rem;
-  background-color: #3b3b3b;
-  color: #fff;
-  border-radius: 10px;
-  border: none;
-  cursor: pointer;
-  margin-top: 20px;
-  transition: background-color 0.3s ease;
+#howtoplay {
+  background-color: #f6faff;
 }
 
-#reset-btn:hover {
-  background-color: #575757;
+#testimonials .card {
+  max-width: 600px;
 }
 
-.popup {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-  display: none;
-  justify-content: center;
-  align-items: center;
+#testimonials .card-body {
+  background-color: #f6faff;
 }
 
-.popup-content {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
+
+footer {
+  background-color: #f6faff;
 }
 
-#newGameBtn {
-  margin-top: 10px;
-  padding: 10px 20px;
-  background-color: #3b3b3b;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-#newGameBtn:hover {
-  background-color: #575757;
-}
-
-@media (max-width: 768px) {
-  h1 {
-    font-size: 2rem;
+/* media queries for testimonial in smaller devices */
+@media (max-width: 1200px) {
+  #testimonials .carousel-item .card-body {
+    max-height: 190px;
+    overflow-y: auto;
   }
+}
 
+/* media queries for tic tac toe game in very smaller devices */
+@media (max-width: 576px) {
   .game {
-    grid-template-columns: repeat(3, 1fr);
-    max-width: 300px;
+    gap: 10px;
+    max-width: 220px;
+    width: 100%;
+    margin: auto;
   }
 
   .box {
-    height: 80px;
-    width: 80px;
-    font-size: 2.5rem;
-  }
-
-  #reset-btn {
-    font-size: 1rem;
-    padding: 8px 16px;
-  }
-
-  #newGameBtn {
-    padding: 8px 16px;
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 480px) {
-  h1 {
-    font-size: 1.5rem;
-  }
-
-  .game {
-    grid-template-columns: repeat(3, 1fr);
-    max-width: 250px;
-  }
-
-  .box {
-    height: 70px;
-    width: 70px;
-    font-size: 2rem;
-  }
-
-  #reset-btn {
-    font-size: 1rem;
-    padding: 6px 12px;
-  }
-
-  #newGameBtn {
-    padding: 6px 12px;
+    width: 60px;
+    height: 60px;
     font-size: 1rem;
   }
 }

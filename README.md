@@ -34,35 +34,6 @@ Play the game live here: **[TacZone](https://premkrrajbhar.github.io/TacZone/)**
 - **Reset the Game**: Click the **"Reset Game"** button to start a new round with an empty board.
 - **Game Result**: Once the game ends, you will show a message of Result
 
-## 📂 Project Structure
-
-```
-├── LICENSE
-├── README.md
-├── assets
-│   ├── favicon
-│   │   └── taczoneFavicon.png
-│   ├── images
-│   │   ├── about-section
-│   │   │   └── img.png
-│   │   ├── how-to-play-section
-│   │   │   └── img.png
-│   │   └── testimonial-section
-│   │       ├── img.png
-│   │       └── users
-│   │           ├── user-1.jpg
-│   │           ├── user-2.jpg
-│   │           └── user-3.jpg
-│   └── screenshot
-│       └── screenshot.jpg
-├── css
-│   └── style.css
-├── index.html
-└── script
-    └── script.js
-
-
-```
 
 ## 📝 How to Run Locally
 

@@ -6,26 +6,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TacZone</title>
 
-  <!-- Meta Tags link -->
-  <meta name="description" content="Play TacZone, a fun and interactive Tic Tac Toe game. Challenge friends or play against the computer. Simple, fast, and addictive!">
-  <meta name="keywords" content="Tic Tac Toe, TacZone, XO game, play tic tac toe, two player game, classic games, browser game, tic tac toe online, tic tac toe AI, strategy games, HTML games, JavaScript games">
+  <!-- =================== Meta Tags =================== -->
+  <meta name="description"
+    content="Play TacZone, a fun and interactive Tic Tac Toe game. Challenge friends or play against the computer. Simple, fast, and addictive!">
+  <meta name="keywords"
+    content="Tic Tac Toe, TacZone, XO game, play tic tac toe, two player game, classic games, browser game, tic tac toe online, tic tac toe AI, strategy games, HTML games, JavaScript games">
   <meta name="robots" content="index, follow">
 
-  <!-- Favicon link -->
-  <link rel="shortcut icon" href="assets/favicon/taczoneFavicon.png" type="image/x-icon">
+  <!-- =================== Favicon =================== -->
+  <link rel="shortcut icon" href="assets/favicon/taczoneFavicon.png" type="image/png">
 
-  <!-- Bootstrap CDN CSS link -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <!-- =================== Bootstrap CSS =================== -->
+  <link rel="stylesheet" href="styles/bootstrap.min.css">
 
-  <!-- Custom CSS link -->
-  <link rel="stylesheet" href="css/style.css">
+  <!-- =================== Custom CSS =================== -->
+  <link rel="stylesheet" href="styles/style.css">
 
 
 </head>
 
 <body>
-  <!-- Header Section -->
+  <!-- ================================ Header Section Start ================================ -->
   <header>
     <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container-fluid">
@@ -53,158 +54,169 @@
       </div>
     </nav>
   </header>
+  <!-- ================================ Header Section End ================================ -->
 
-  <!-- To give some space between header and startplaying section -->
+
+  <!-- =================== To give some space between header and startplaying section =================== -->
   <div class="bg-white" id="customSpace"></div>
 
-  <!-- Start Playing Section -->
-  <section id="startplaying" class="text-center py-5 mx-5 rounded-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <h1 class="display-4 fw-bolder mb-5">Play TacZone: A Tic Tac Toe Game</h1>
 
-          <!-- Game Code -->
-          <div class="game">
-            <button class="box btn btn-outline-dark p-0 fs-1 rounded"></button>
-            <button class="box btn btn-outline-dark p-0 fs-1 rounded"></button>
-            <button class="box btn btn-outline-dark p-0 fs-1 rounded"></button>
-            <button class="box btn btn-outline-dark p-0 fs-1 rounded"></button>
-            <button class="box btn btn-outline-dark p-0 fs-1 rounded"></button>
-            <button class="box btn btn-outline-dark p-0 fs-1 rounded"></button>
-            <button class="box btn btn-outline-dark p-0 fs-1 rounded"></button>
-            <button class="box btn btn-outline-dark p-0 fs-1 rounded"></button>
-            <button class="box btn btn-outline-dark p-0 fs-1 rounded"></button>
+  <main>
+    <!-- ================================ Start Playing Section Start ================================ -->
+    <section id="startplaying" class="text-center py-5 mx-5 rounded-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="display-4 fw-bolder mb-5">Play TacZone: A Tic Tac Toe Game</h1>
+
+            <!-- Game Code -->
+            <div class="game">
+              <button class="box btn btn-outline-dark p-0 fs-1 rounded"></button>
+              <button class="box btn btn-outline-dark p-0 fs-1 rounded"></button>
+              <button class="box btn btn-outline-dark p-0 fs-1 rounded"></button>
+              <button class="box btn btn-outline-dark p-0 fs-1 rounded"></button>
+              <button class="box btn btn-outline-dark p-0 fs-1 rounded"></button>
+              <button class="box btn btn-outline-dark p-0 fs-1 rounded"></button>
+              <button class="box btn btn-outline-dark p-0 fs-1 rounded"></button>
+              <button class="box btn btn-outline-dark p-0 fs-1 rounded"></button>
+              <button class="box btn btn-outline-dark p-0 fs-1 rounded"></button>
+            </div>
+
+            <p id="winnerMessage" class="result-message"></p>
+            <button id="reset-btn" class="btn btn-dark mt-3 px-4 py-2 fs-5">Reset Game</button>
           </div>
-
-          <p id="winnerMessage" class="result-message"></p>
-          <button id="reset-btn" class="btn btn-dark mt-3 px-4 py-2 fs-5">Reset Game</button>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+    <!-- ================================ Start Playing Section End ================================ -->
 
-  <!-- About Section -->
-  <section id="about" class="py-5 d-flex justify-content-center align-items-center">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-sm-12 col-md-6">
-          <img src="assets/images/about-section/img.png" class="img-fluid" alt="about-section image">
-        </div>
-        <div class="col-12 col-sm-12 col-md-6 text-center text-md-end">
-          <h1 class="display-5 fw-bolder">Play Smart, Fast, and Free with TacZone</h1>
-          <p class="fs-6">Experience Tic Tac Toe like never before with our sleek and intuitive game board.
-            TacZone lets you jump right into action with zero distractions and no sign-ups required. Whether
-            you're playing to pass time or outsmart a friend, our responsive design ensures a smooth
-            experience on any device, anywhere, anytime. Just tap, play, and win</p>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- How to Play Section -->
-  <section id="howtoplay" class="py-5 text-dak min-vh-100 d-flex justify-content-center align-items-center">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6">
-          <h1 class="display-5 fw-bolder text-center text-md-start" data-aos="fade-right" data-aos-duration="1000">How
-            to Play TacZone –
-            The Tic Tac Toe Game</h1>
-          <p class="fs-6 mb-3  text-center text-md-start" data-aos="fade-left" data-aos-duration="1000">
-            Playing TacZone is quick and easy
-            — no signup or skills required. You don’t need to be a gaming expert to enjoy it. With just a
-            few taps, you’ll be in the game and making your moves in seconds. Just follow these simple
-            steps.</p>
-          <p class="fs-3 fw-bold mb-0" data-aos="fade-right" data-aos-duration="1000">01 Tap to Start Playing
-          </p>
-          <p class="ms-5 mt-0 pt-0" data-aos="fade-right" data-aos-duration="1000">The game begins as soon as
-            you tap a square, no setup or symbol selection needed.</p>
-
-          <p class="fs-3 fw-bold mb-0" data-aos="fade-left" data-aos-duration="1000">02 Symbols Are Assigned
-            Automatically</p>
-          <p class="ms-5 mt-0 pt-0" data-aos="fade-left" data-aos-duration="1000">The first tap places an O,
-            and the turns alternate automatically between O and X.</p>
-
-          <p class="fs-3 fw-bold mb-0" data-aos="fade-right" data-aos-duration="1000">03 Take Turns</p>
-          <p class="ms-5 mt-0 pt-0" data-aos="fade-right" data-aos-duration="1000">Continue tapping on empty
-            squares to place your symbol. Each turn alternates between O and X.</p>
-
-          <p class="fs-3 fw-bold mb-0" data-aos="fade-left" data-aos-duration="1000">04 Win by Aligning Three
-          </p>
-          <p class="ms-5 mt-0 pt-0" data-aos="fade-left" data-aos-duration="1000">Be the first to get three of
-            the same symbol in a row — horizontally, vertically, or diagonally — to win.</p>
-
-          <p class="fs-3 fw-bold mb-0" data-aos="fade-left" data-aos-duration="1000">05 Reset Anytime</p>
-          <p class="ms-5 mt-0 pt-0" data-aos="fade-left" data-aos-duration="1000">Use the Reset button to
-            clear the board and start a new game at any time.
-
-          </p>
-
-        </div>
-        <div class="col-lg-6">
-          <img src="assets/images/how-to-play-section/img.png" class="img-fluid" alt="about-section-image"
-            data-aos="zoom-in" data-aos-duration="1000">
+    <!-- ================================ About Section Start ================================ -->
+    <section id="about" class="py-5 d-flex justify-content-center align-items-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-6">
+            <img src="assets/images/about-section/img.png" class="img-fluid" alt="about-section image">
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 text-center text-md-end">
+            <h1 class="display-5 fw-bolder">Play Smart, Fast, and Free with TacZone</h1>
+            <p class="fs-6">Experience Tic Tac Toe like never before with our sleek and intuitive game board.
+              TacZone lets you jump right into action with zero distractions and no sign-ups required. Whether
+              you're playing to pass time or outsmart a friend, our responsive design ensures a smooth
+              experience on any device, anywhere, anytime. Just tap, play, and win</p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+    <!-- ================================ About Section End ================================ -->
 
-  <!-- Testimonial Section -->
-  <section id="testimonials" class="py-5 min-vh-100 d-flex justify-content-center align-items-center">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-sm-12 col-md-6">
-          <img src="assets/images/testimonial-section/img.png" class="img-fluid" alt="">
-        </div>
-        <div class="col-12 col-sm-12 col-md-6">
-          <div class="text-center text-md-end">
-            <h1 class="display-5 fw-bolder mt-5">Loved by Players Worldwide</h1>
-            <p>Players around the world are loving the fast, simple, and fun experience TacZone brings.
-              Don’t just take our word for it, here’s what real users have to say about their time in the
-              zone.
+
+    <!-- ================================ How to play Section Start ================================ -->
+    <section id="howtoplay" class="py-5 text-dak min-vh-100 d-flex justify-content-center align-items-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bolder text-center text-md-start" data-aos="fade-right" data-aos-duration="1000">How
+              to Play TacZone –
+              The Tic Tac Toe Game</h1>
+            <p class="fs-6 mb-3  text-center text-md-start" data-aos="fade-left" data-aos-duration="1000">
+              Playing TacZone is quick and easy
+              — no signup or skills required. You don’t need to be a gaming expert to enjoy it. With just a
+              few taps, you’ll be in the game and making your moves in seconds. Just follow these simple
+              steps.</p>
+            <p class="fs-3 fw-bold mb-0" data-aos="fade-right" data-aos-duration="1000">01 Tap to Start Playing
             </p>
+            <p class="ms-5 mt-0 pt-0" data-aos="fade-right" data-aos-duration="1000">The game begins as soon as
+              you tap a square, no setup or symbol selection needed.</p>
+
+            <p class="fs-3 fw-bold mb-0" data-aos="fade-left" data-aos-duration="1000">02 Symbols Are Assigned
+              Automatically</p>
+            <p class="ms-5 mt-0 pt-0" data-aos="fade-left" data-aos-duration="1000">The first tap places an O,
+              and the turns alternate automatically between O and X.</p>
+
+            <p class="fs-3 fw-bold mb-0" data-aos="fade-right" data-aos-duration="1000">03 Take Turns</p>
+            <p class="ms-5 mt-0 pt-0" data-aos="fade-right" data-aos-duration="1000">Continue tapping on empty
+              squares to place your symbol. Each turn alternates between O and X.</p>
+
+            <p class="fs-3 fw-bold mb-0" data-aos="fade-left" data-aos-duration="1000">04 Win by Aligning Three
+            </p>
+            <p class="ms-5 mt-0 pt-0" data-aos="fade-left" data-aos-duration="1000">Be the first to get three of
+              the same symbol in a row — horizontally, vertically, or diagonally — to win.</p>
+
+            <p class="fs-3 fw-bold mb-0" data-aos="fade-left" data-aos-duration="1000">05 Reset Anytime</p>
+            <p class="ms-5 mt-0 pt-0" data-aos="fade-left" data-aos-duration="1000">Use the Reset button to
+              clear the board and start a new game at any time.
+
+            </p>
+
           </div>
+          <div class="col-lg-6">
+            <img src="assets/images/how-to-play-section/img.png" class="img-fluid" alt="about-section-image"
+              data-aos="zoom-in" data-aos-duration="1000">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================================ How to play Section End ================================ -->
 
-          <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-aos="fade-right"
-            data-aos-duration="1000">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="card mx-auto text-center border-0">
-                  <div class="card-body  text-dark">
-                    <img src="assets/images/testimonial-section/users/user-1.jpg" alt="User photo - 1"
-                      class="rounded-circle mb-3" width="60" height="60">
-                    <p class="card-text opacity-75"><em>"TacZone brings back childhood memories with
-                        a modern touch. Super easy to play and looks great on mobile too. Love
-                        it!"</em>
-                    </p>
-                    <h6 class="card-subtitle mb-2 opacity-75">Liam Carter</h6>
+
+    <!-- ================================ Testimonials Section Start ================================ -->
+    <section id="testimonials" class="py-5 min-vh-100 d-flex justify-content-center align-items-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-6">
+            <img src="assets/images/testimonial-section/img.png" class="img-fluid" alt="testimonial image">
+          </div>
+          <div class="col-12 col-sm-12 col-md-6">
+            <div class="text-center text-md-end">
+              <h1 class="display-5 fw-bolder mt-5">Loved by Players Worldwide</h1>
+              <p>Players around the world are loving the fast, simple, and fun experience TacZone brings.
+                Don’t just take our word for it, here’s what real users have to say about their time in the
+                zone.
+              </p>
+            </div>
+
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-aos="fade-right"
+              data-aos-duration="1000">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="card mx-auto text-center border-0">
+                    <div class="card-body  text-dark">
+                      <img src="assets/images/testimonial-section/users/user-1.jpg" alt="User photo - 1"
+                        class="rounded-circle mb-3" width="60" height="60">
+                      <p class="card-text opacity-75"><em>"TacZone brings back childhood memories with
+                          a modern touch. Super easy to play and looks great on mobile too. Love
+                          it!"</em>
+                      </p>
+                      <h6 class="card-subtitle mb-2 opacity-75">Liam Carter</h6>
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              <div class="carousel-item">
-                <div class="card mx-auto text-center border-0">
-                  <div class="card-body text-dark">
-                    <img src="assets/images/testimonial-section/users/user-2.jpg" alt="User Photo -2"
-                      class="rounded-circle mb-3" width="60" height="60">
-                    <p class="card-text opacity-75"><em>"I was just looking for a simple Tic Tac Toe
-                        game and found this gem. It's clean, fast, and totally addictive!"</em>
-                    </p>
-                    <h6 class="card-subtitle mb-2 opacity-75">Emily Ross</h6>
+                <div class="carousel-item">
+                  <div class="card mx-auto text-center border-0">
+                    <div class="card-body text-dark">
+                      <img src="assets/images/testimonial-section/users/user-2.jpg" alt="User Photo -2"
+                        class="rounded-circle mb-3" width="60" height="60">
+                      <p class="card-text opacity-75"><em>"I was just looking for a simple Tic Tac Toe
+                          game and found this gem. It's clean, fast, and totally addictive!"</em>
+                      </p>
+                      <h6 class="card-subtitle mb-2 opacity-75">Emily Ross</h6>
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              <div class="carousel-item">
-                <div class="card mx-auto text-center border-0">
-                  <div class="card-body text-dark">
-                    <img src="assets/images/testimonial-section/users/user-3.jpg" alt="User Photo -3"
-                      class="rounded-circle mb-3" width="60" height="60">
-                    <p class="card-text opacity-75"><em>"What I really like is the instant gameplay
-                        — no popups or distractions. TacZone does exactly what it should, and it
-                        does it well."</em>
-                    </p>
-                    <h6 class="card-subtitle mb-2 opacity-75">Robert</h6>
+                <div class="carousel-item">
+                  <div class="card mx-auto text-center border-0">
+                    <div class="card-body text-dark">
+                      <img src="assets/images/testimonial-section/users/user-3.jpg" alt="User Photo -3"
+                        class="rounded-circle mb-3" width="60" height="60">
+                      <p class="card-text opacity-75"><em>"What I really like is the instant gameplay
+                          — no popups or distractions. TacZone does exactly what it should, and it
+                          does it well."</em>
+                      </p>
+                      <h6 class="card-subtitle mb-2 opacity-75">Robert</h6>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -212,11 +224,13 @@
           </div>
         </div>
       </div>
-    </div>
-    </div>
-  </section>
+      </div>
+    </section>
+    <!-- ================================ Testimonials Section End ================================ -->
+  </main>
 
-  <!-- Footer section -->
+
+  <!-- ================================ Footer Section Start ================================ -->
   <footer class="pt-4 pb-1">
     <div class="container">
       <div class="row">
@@ -243,14 +257,14 @@
       </div>
     </div>
   </footer>
+  <!-- ================================ Footer Section End ================================ -->
 
-  <!-- Bootstrap JS CDN link -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
-    crossorigin="anonymous"></script>
 
-  <!-- Custom JS link -->
-  <script src="script/script.js"></script>
+  <!-- =================== Bootstrap JS =================== -->
+  <script src="scripts/bootstrap.bundle.min.js"></script>
+
+  <!-- =================== Custom JS =================== -->
+  <script src="scripts/script.js"></script>
 
 </body>
 

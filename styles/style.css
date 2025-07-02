@@ -1,0 +1,99 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  scroll-padding-top: 56px;
+}
+
+.navbar {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+}
+
+.navbar .nav-link:hover {
+  text-decoration: underline;
+}
+
+#customSpace {
+  height: 80px;
+}
+
+#startplaying {
+  background-color: #f6faff;
+}
+
+.game {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  max-width: 360px;
+  width: 100%;
+  margin: auto;
+}
+
+.box {
+  width: 90px;
+  height: 90px;
+  font-size: 3rem;
+  background-color: #fff;
+  border: 2px solid #333;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.box:hover {
+  background-color: #e0e0e0;
+}
+
+.result-message {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 15px;
+  color: #333;
+}
+
+#howtoplay {
+  background-color: #f6faff;
+}
+
+#testimonials .card {
+  max-width: 600px;
+}
+
+#testimonials .card-body {
+  background-color: #f6faff;
+}
+
+
+footer {
+  background-color: #f6faff;
+}
+
+/* media queries for testimonial in smaller devices */
+@media (max-width: 1200px) {
+  #testimonials .carousel-item .card-body {
+    max-height: 190px;
+    overflow-y: auto;
+  }
+}
+
+/* media queries for tic tac toe game in very smaller devices */
+@media (max-width: 576px) {
+  .game {
+    gap: 10px;
+    max-width: 220px;
+    width: 100%;
+    margin: auto;
+  }
+
+  .box {
+    width: 60px;
+    height: 60px;
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,5 @@
+# Third-party CSS (excluded from GitHub language stats)
+styles/bootstrap.min.css linguist-vendored
+
+# Third-party JS (excluded from GitHub language stats)
+scripts/bootstrap.bundle.min.js linguist-vendored

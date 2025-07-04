@@ -1,4 +1,4 @@
-# TacZone
+# TacZone [![Version](https://img.shields.io/badge/version-v2.0.2-grey.svg)](./CHANGELOG.md)
 
 **TacZOne** is a clean, fun, and interactive web-based Tic Tac Toe game. Built with HTML, CSS and JavaScript.
 
@@ -53,6 +53,11 @@ Play the game live here: **[TacZone](https://premkrrajbhar.github.io/TacZone/)**
 
 ## 📄 License
 This project is open-source and free to use under the MIT License.
+
+## 📄 Changelog
+
+- See [CHANGELOG](./CHANGELOG.md) for a complete list of updates, fixes and version history.
+- **Current Version:** `v2.0.2`
 
 ## 🤝 Contributing
 
